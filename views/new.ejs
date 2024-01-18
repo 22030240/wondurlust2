@@ -1,0 +1,52 @@
+<%layout("/layouts/boilerplate")%>
+<body>
+    <div class="row mt-3">
+        <div class="col-8 offset-2" >
+            <br><br>
+    <h3>create new Listing</h3>
+
+
+    <form  method="POST" action="/Listings" enctype="multipart/form-data">
+        <div class="mb-3">
+       <label for="title" class="form-label">Title</label>
+        <input name="title" placeholder=" Enter title" class="form-control" required>
+        <div class="valid-feedback"> title look good</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+             <input name="description" placeholder="Enter description" class="form-control"  required></div>
+       
+    <!-- extra  -->
+    <div class="mb-3">
+        <label for="image" class="form-label">Upload Listing</label>
+    <input name="image" placeholder="Enter Image/url" class="form-control" type="file">
+   
+</div>
+<!--  -->
+    <div class="row">
+        <div class="mb-3 col-md-4">
+            <label for="price" class="form-label">Price</label>
+            <input name="price" placeholder="enter price" type="number" class="form-control"  required>
+<div class="invalid-feedback"> price should be valid</div>
+        </div>
+
+           <div class="mb-3 col-md-8">
+            <label for="location" class="form-label">Location</label>
+            <input name="location" placeholder="Enter Location" class="form-control"  required>
+            
+           </div>
+
+    </div>
+       
+       <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input name="country" placeholder="Enter country" class="form-control" required>
+    </div>
+
+<button class="btn btn-dark add-btn mt-3">Add</button>
+
+    </form>
+</body>
+</div>
+</div>
